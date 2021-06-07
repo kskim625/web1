@@ -7,6 +7,16 @@
   </head>
   <body>
     <h1><p><a href="index.html">WEB</a></p></h1>
+    <div id="buttons">
+    <input type="button" value="night" onclick="
+      document.querySelector('body').style.backgroundColor = 'black';
+      document.querySelector('body').style.color = 'white';
+    ">
+    <input type="button" value="day" onclick="
+      document.querySelector('body').style.backgroundColor = 'white';
+      document.querySelector('body').style.color = 'black';
+    ">
+  </div>
     <div id="grid">
       <ol id="list">
         <li><a href="1.html">HTML</a></li>
@@ -16,7 +26,7 @@
     <div id="article">
       <h2>JavaScript란 무엇인가?</h2>
       <p><a href="https://en.wikipedia.org/wiki/JavaScript" target="_blank"
-      title="JavaScript wikipedia">JavaScript</a>, often abbreviated as JS, is a
+      title="JavaScript wikipedia"><span style="font-weight:bold;">JavaScript</a></span>, often abbreviated as JS, is a
       programming language that conforms to the ECMAScript specification.
       JavaScript is high-level, often just-in-time compiled, and multi-paradigm.
       It has curly-bracket syntax, dynamic typing, prototype-based
