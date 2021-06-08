@@ -4,22 +4,12 @@
     <title>Web - Welcome</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="style.css">
+    <script src="colors.js"></script>
   </head>
   <body>
     <h1><p><a href="index.html">WEB</a></p></h1>
     <div id="buttons">
-    <input type="button" value="night" onclick="
-    var target = document.querySelector('body');
-    if(this.value === 'night'){
-      target.style.backgroundColor = 'black';
-      target.style.color = 'white';
-      this.value = 'day';
-    } else {
-      target.style.backgroundColor = 'white';
-      target.style.color = 'black';
-      this.value = 'night';
-    }
-  ">
+    <input type="button" value="night" onclick="nightDayHandler(this);">
   </div>
     <div id="grid">
       <ol id="list">
